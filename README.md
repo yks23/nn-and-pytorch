@@ -45,13 +45,19 @@
 
 比如conda来安装一个pytorch（举例）
 ```bash
-conda install pytorch torchvision torchaudio cpuonly -c pytorch
+conda install pytorch torchvision torchaudio -c pytorch
 ```
 
 而 Huggingface 的 `transformers` 库则需要通过 **Pip** 安装：
 
 ```bash
 pip install transformers
+```
+
+一般你不用自己安装指定版本的具体包，因为人家一般在根目录下写好了requirements.txt文件，你只需要运行以下命令即可(本仓库也一样)：
+
+```bash
+pip install -r requirements.txt
 ```
 
 ### 2. **Wandb 注册（Optional）**
@@ -124,8 +130,8 @@ print(torch.cuda.is_available())  # 检查是否能使用 GPU
 
 ### 5. **Huggingface 注册（Optional）**
 
-**Huggingface** 是一个顶尖的人工智能平台，拥有大量的预训练模型、数据集和代码，特别适合自然语言处理（NLP）相关的任务。你可以利用 Huggingface 提供的预训练模型进行快速原型设计，并通过其平台进行模型训练和分享。
-
+**Huggingface** 是一个顶尖的人工智能平台，拥有大量的预训练模型、数据集和代码。你可以利用 Huggingface 提供的预训练模型进行快速原型设计，并通过其平台进行模型训练和分享。
+甚至还可以在上面看daily paper，就像早上起来读报的老大爷。
 #### **注册与使用**：
 
 1. **注册 Huggingface 账号**
@@ -156,7 +162,7 @@ print(torch.cuda.is_available())  # 检查是否能使用 GPU
     git clone https://github.com/d2l-ai/d2l-en.git
     ```
 - **谷歌开发者文档**
-https://developers.google.com/machine-learning/crash-course/neural-networks/interactive-exercises
+   https://developers.google.com/machine-learning/crash-course/neural-networks/interactive-exercises
 - **Tensorflow的play ground**
     https://playground.tensorflow.org/
     可视化很好，比较好玩
