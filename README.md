@@ -1,4 +1,3 @@
-
 # SAST2025年暑培 - 神经网络与 PyTorch 入门资料仓库
 
 ## 课前准备
@@ -153,6 +152,12 @@ print(torch.cuda.is_available())  # 检查是否能使用 GPU
    model = BertForSequenceClassification.from_pretrained('bert-base-uncased')
    tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
    ```
+
+注：huggingface如果访问困难，或者需要下载大文件，可以使用hf-mirror.com国内镜像站平替
+此时，需要引入环境变量：
+```bash
+export HF_ENDPOINT=https://hf-mirror.com
+```
 
 ### 6. **其他的网站**
 - **d2l.ai**
